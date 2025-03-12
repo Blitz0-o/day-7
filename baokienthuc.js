@@ -1,36 +1,27 @@
-//Homework
-//1.Difference(s) between == and ===?
-// == là so sánh giá trị nhưng không so sánh dữ liệu vd: console.log(5 == "5") => true(vì "5" này được chuyển thành dữ liệu trước đó)
-// === là so sánh giá trị và cả dữ liệu vd: console.log(5 === "5") => false(vì "5" là chuỗi khác số)
-//Use variables and operators to:
-//Calculate BMI (Body Mass Index)
-const weight = 55;
-const height = 1.74;
-const BMI = weight / (height * height);
-console.log("BMI: ", BMI);
-
-
-//Calculate Simple Interest (principal * rate * time)
-let principal = 3000;
-let rat = 0.5
-const time = 15;
-const interest = principal * rat * time;
-console.log("Interest: ", interest);
-
-
-//Convert Currency (USD to local currency)
-let money = 50000;
-const local = 25000;
-const currency = money * local;
-console.log("Currency: ", currency);
-
-
-
-//Calculate Time (hours:minutes:seconds)
+// 1. Difference(s) between == and ===?
+console.log("'==': This operator tests for equality of values but allows type casting. This means that if the values being compared are of different types, JavaScript will attempt to convert them to a common type before performing the comparison.");
+console.log("'===': This operator checks both value and type without allowing type casting. If the values being compared are of different types, the comparison returns false.")
+// 2. Use variables and operators to
+// 2.1: Calculate BMI (Body Mass Index)
+let height = 1.75;
+let weight = 65;
+let bmi = weight / (height * height);
+console.log("BMI: " + bmi)
+// 2.2: Calculate Simple Interest (principal * rate * time)
+let principal = 10000;
+let rate = 0.05;
+let time = 2;
+let interest = principal * rate * time;
+console.log("Interest = " + interest);
+// 2.3: Convert Currency (USD to local currency)
+let exchangeRate = 25000; 
+let amountInUSD = 100; 
+let amountInVND = amountInUSD * exchangeRate;
+console.log(`${amountInUSD} USD = ${amountInVND} VND`);
+// 2.4: Calculate Time (hours:minutes:seconds)
 let now = new Date();
-let hours = now.getHours.toString().padStart(2, '0');
-let minutes = now.getMinutes.toString().padStart(3, '0');
-let seconds =  now.getSeconds.toString().padStart(4, '0');
+let hours = now.getHours().toString().padStart(2, '0');
+let minutes = now.getMinutes().toString().padStart(2, '0');
+let seconds =  now.getSeconds().toString().padStart(2, '0');
 let time1 = `${hours}:${minutes}:${seconds}`;
 console.log("Time1: ", now);
-
