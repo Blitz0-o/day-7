@@ -24,4 +24,4 @@ let hours = now.getHours().toString().padStart(2, '0');
 let minutes = now.getMinutes().toString().padStart(2, '0');
 let seconds =  now.getSeconds().toString().padStart(2, '0');
 let time1 = `${hours}:${minutes}:${seconds}`;
-console.log("Time1: ", now);
+console.log("Time1: ", time1);
