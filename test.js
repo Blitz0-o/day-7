@@ -6,7 +6,7 @@ console.log("'===': This operator checks both value and type without allowing ty
 let height = 1.75;
 let weight = 65;
 let bmi = weight / (height * height);
-console.log("BMI: " + bmi)
+console.log("Bmi: " + bmi)
 // 2.2: Calculate Simple Interest (principal * rate * time)
 let principal = 10000;
 let rate = 0.05;
@@ -24,4 +24,4 @@ let hours = now.getHours().toString().padStart(2, '0');
 let minutes = now.getMinutes().toString().padStart(2, '0');
 let seconds =  now.getSeconds().toString().padStart(2, '0');
 let time1 = `${hours}:${minutes}:${seconds}`;
-console.log("Time1: ", time1);
+console.log("Clock: ", time1);

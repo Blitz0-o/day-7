@@ -11,7 +11,7 @@ console.log("Average score:", averageScore);
 // Exercise 2: Calculate Rectangle Perimeter and 0Area
 // Declare width and height
 let width = 5;
-let heightExerciseTwo = 3;
+let height = 3;
 // Calculate perimeter
 let perimeter = 2 * (width + height);
 // Calculate area
